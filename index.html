@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>توقيت صلاة الفجر والعشاء في أوروبا</title>
+  <link rel="stylesheet" href="styles-big.css">
+  <link rel="stylesheet" href="styles-media.css">
+  <meta property="og:image" content="images/omawi.png" />
+  <meta property="og:title" content="توقيت صلاة الفجر والعشاء في أوروبا" />
+  <meta property="og:description" content="To increases our awareness" />
+  <link rel="icon" href="images/omawi.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/omawi.png" type="image/x-icon" />
+  <link rel="manifest" href="manifest.json" />
+  
+  <script src="makka.js"></script>
+  <script src="city-latitude.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+	<audio id="azanSound" src="hasan.mp3" preload="auto"></audio>
+<div class="outer-container">
+  <div class="column text-column">
+    <div class="centered">
+      
+	  <div id="countdown" style="font-size: 1.2rem; font-weight: bold; color: red;"></div>
+	  
+      <p class="centered" style="font-size: 0.8rem; font-weight: bold;">
+        توقيت صلاة الفجر والعشاء حسب فتوى مجلس الإفتاء الأوروبي - 2015
+        <br><span style="font-size: 0.7rem; font-weight: bold;">
+		
+		حسب قاعدة<span style="font-weight: bold; color: blue;"> ساعة و5 دقائق </span>قبل الشروق .. وبعد الغروب
+		
+		</span>
+      </p>
+
+      <div class="centered-container">
+        <!-- City and Day Selectors -->
+        <div class="selectors">
+          <select id="citySelect" style="width: 150px; margin: 5px;"></select>
+          <select id="daySelect" style="width: 100px; margin: 5px;"></select>
+        </div>
+
+        <!-- Latitude and Clock Display -->
+		<div class="latitude-clock">
+			<span style="font-weight: bold;">خط العرض: </span>
+			<span style="font-weight: bold; font-size: 0.95rem;" id="latitudeCell">—</span>
+			<span id="digitalClock"></span>
+		</div>
+
+
+        <!-- Prayer Times Table -->
+        <div class="div-times">
+          <table class="common-table">
+            <tr class="tr-times">
+              <th>اليوم</th>
+              <td id="selectedDayCell">—</td>
+              <th style="font-size: 0.8rem;">صلاة المغرب قياساً لمكة</th>
+            </tr>
+            <tr class="tr-times">
+              <th>الشروق</th>
+              <td id="sunriseCell">—</td>
+              <td>—</td>
+            </tr>
+            <tr class="tr-times">
+              <th>الفجر</th>
+              <td id="fajrCell">—</td>
+              <td>—</td>
+            </tr>
+            <tr class="tr-times">
+              <th>الغروب</th>
+              <td id="sunsetCell">—</td>
+              <td id="makkaFotorCell" style="font-weight: bold;">—</td>
+            </tr>
+            <tr class="tr-times">
+              <th>العشاء</th>
+              <td id="ishaaCell">—</td>
+              <td>—</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Audio Controls -->
+        <audio id="azanSound" preload="auto"></audio>
+        <div style="display: flex; align-items: center;">
+          <button id="stopAzan" onclick="stopAzan()">⏹️ إيقاف الأذان</button>
+          <label for="soundSelect" style="margin: 0 5px;">اختيار مؤذن</label>
+          <select id="soundSelect" style="margin-right: 5px; margin-left: 5px;"></select>
+		  <button id="previewBtn">&#9654;</button>
+
+        </div>
+
+      </div> <!-- End centered-container -->
+    </div> <!-- End centered -->
+  </div> <!-- End column -->
+</div> <!-- End outer-container -->
+
+<!-- Popup Notification -->
+<div id="prayerPopup" class="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p id="prayerMessage"></p>
+  </div>
+</div>
+
+<!-- Navigation Buttons -->
+<div style="text-align: center; margin-top: 0rem;">
+  <button id="prevDayBtn">← اليوم السابق</button>
+  <button id="nextDayBtn">اليوم التالي →</button>
+</div>
+		<div id="city-list-container2">
+			فقط في اليوم (غير الطبيعي) -أي الذي يزيد طول النهار فيه على 18 ساعة ويقصر الليل فيه عن 10 ساعات- يكون توقيت الفطور فارقاً اعتماداً على توقيت مكة للمدن الواقعة شمال خط العرض 49، أما في الشتاء فقد يتساويان أو يكون النهار هنا -في أوروبا- أقصر.
+		</div>
+		<div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px; font-size: 0.8rem;">
+			<a href="explain.html">قاعدة ساعة و5 دقائق</a>
+			<a href="high-latitudes.html">مشكلة خطوط العرض العليا</a>
+		</div>
+		<div style="display: flex; justify-content: center; gap: 2px; margin-top: 10px; margin-bottom: 15px; font-size: 0.8rem;">
+			<a href="sh-zarka.html">رأي الشيخ مصطفى الزرقا</a>
+		</div>
+		 <div id="exp4">
+	<span style="color: red;">ملاحظة:</span><span></span> لإصدار صوت الأذان يجب منح الإذن لمتصفح الإنترنت
+	</div>
+	<p id="exp2"><a href="browser-settings.html">كيفية ضبط إعدادات المتصفح لإصدار صوت الأذان</a></p>
+    
+	<div id="exp3">تحميل متصفح موزيلا Mozilla firefox</div>
+		<div class="icon-row">
+	  <div class="link-container-w">
+		<a href="https://www.mozilla.org/en-US/firefox/browsers/windows-64-bit/">
+		  <img src="images/windows.png" alt="Download firefox for windows-64-bit">
+		</a>
+	  </div>
+	  <div class="link-container-app">
+		<a href="https://apps.apple.com/us/app/firefox-private-safe-browser/id989804926">
+		  <img src="images/App Store.png" alt="Download on the App Store">
+		</a>
+	  </div>
+	  <div class="link-container-app">
+		<a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+		  <img src="images/Google Play.png" alt="GET IT ON Google Play">
+		</a>
+	  </div>
+	</div>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(reg => console.log("✅ Service Worker Registered"))
+      .catch(err => console.error("❌ Service Worker Error:", err));
+  }
+</script>
+</body>
+</html>

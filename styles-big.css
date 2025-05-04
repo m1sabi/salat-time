@@ -1,0 +1,367 @@
+/* Define common styles */
+.common-background {
+    background-color: #ffffff;
+}
+.common-center-text {
+    text-align: center;
+}
+.common-padding {
+    padding: 20px;
+}
+.common-width-70 {
+    width: 70%;
+}
+.common-font-bold {
+    font-weight: bold;
+}
+.common-font-1rem {
+    font-size: 1rem;
+}
+/* Style for all tables */
+.common-table, .div-latitude table {
+    width: 40%; /* Same width as the 3rd table */
+    max-width: 800px; /* Prevents tables from becoming too wide */
+    margin: 10px auto; /* Centers horizontally */
+    border-collapse: collapse;
+    table-layout: fixed;
+	margin-top: 5px; 
+    margin-bottom: 3px;
+    padding: 3px; /* Adjust internal padding */
+}
+
+/* Apply common styles */
+.outer-container {
+	margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f2f2f2; /* Light gray background for the page */
+}
+.inner-container {
+    display: flex;
+    width: 70%;
+}
+.side-column {
+    width: 10%;
+}
+.text-column {
+    width: 50%;
+    background-color: #ffffff;
+    text-align: right;
+    padding: 10px;
+}
+.list-column {
+    width: 40%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.column {
+    width: 50%;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    direction: rtl;
+    padding-right: 5px;
+}
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Light gray background for the page */
+    margin: 0 auto;
+}
+.link-container-w,
+.link-container-app {
+    margin: 0 10px; /* Add some margin between the images */
+}
+.link-container-w img {
+    width: 60px; /* Resize the image width */
+    height: auto; /* Maintain aspect ratio */
+}
+.link-container-app img {
+    width: 100px; /* Resize the image width */
+    height: auto; /* Maintain aspect ratio */
+}
+.spaced {
+    margin-top: 10px; /* Add space above the element */
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+    font-size: 18px;
+    font-weight: bold;
+}
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+.bold-text {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.center-container {
+    width: 100%; /* Full width for the entire container */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+#city-list-container {
+    width: 30%;  /* Set width to 30% of the page */
+    margin: auto; /* Center it horizontally */
+    text-align: center; /* Center the content inside */
+    font-size: 0.6rem;
+}
+#city-list-container2 {
+   width: clamp(300px, 40%, 400px) !important;
+  margin: auto; 
+  text-align: center; 
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: row; /* Default: two columns */
+    justify-content: center;
+    align-items: stretch; /* Ensure content is not clipped */
+    height: auto; /* Remove fixed height */
+    min-height: 100vh; /* Ensure full screen */
+	margin-top: 5px;
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+.selectors {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#prevDayBtn, #nextDayBtn {
+    display: none;
+}
+.1st-table {
+  margin: 5px auto;
+  width: 240px;         
+  max-width: 90%;       
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+.second-table {
+  margin: 5px auto; /* Center horizontally */
+  width: 80%; /* Table takes 80% of page width */
+  max-width: 800px; /* Prevents table from becoming too large */
+  border-collapse: collapse;
+}
+.3rd-table {
+  margin: 5px auto;
+  width: 300px;         
+  max-width: 90%;       
+  border-collapse: collapse;
+}
+.div-latitude {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align content vertically */
+  text-align: center;
+  width: 80%; /* Allow full width */
+  max-width: 80%; /* Restrict to 80% */
+  margin: 5px auto; /* Add space above and below */
+  margin-top: 8px; /* Reduce vertical space */
+  margin-bottom: 8px;
+}
+.tr-city {
+  border: 1px;
+}
+#td-ctiy {
+  margin-right: 0px;
+  text-align: right;
+  border: 0px;
+}
+.div-day {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#cell1-latitude {
+    display: inline-block; /* Shrink to fit content */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 2px 5px; /* Minimal padding */
+    width: auto; /* Remove fixed width */
+    text-align: right; /* Align Arabic text properly */
+	font-weight: bold;
+}
+#cell2-latitude {
+  margin: 0 5px;
+  border: none;
+  width: 80px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#before-clock {
+  border: none;
+  width: 30px;
+  margin: 0 10px;
+}
+#latitude-clock {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+#countdown {
+  margin-top: 5px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+  display: none;
+  z-index: 999;
+}
+
+#digitalClock {
+  border: 0px solid red;
+  width: 80px;
+  color: green;
+  font-weight: bold;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: right;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.center-container button {
+    height: 35px; /* Set the height of the button */
+    margin-top: 3px; /* Add margin at the top */
+    margin-bottom: 3px; /* Add margin at the bottom */
+}
+
+/* Table layout */
+.td-times {
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  text-align: center;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 4px 8px; /* Adjust padding inside table cells */
+    text-align: center;
+    font-size: 0.9rem;
+}
+th {
+    background-color: #f2f2f2;
+}
+.row-separator {
+    border-bottom: 2px solid red; /* example style */
+}
+.gr {
+    color: green;
+    font-weight: bold;
+}
+.centered {
+	margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5px; /* Reduce space below heading */
+}
+#tawkeet {
+    margin: auto; /* Center it horizontally */
+    text-align: center; /* Center the text */
+    font-size: 3.0rem;
+}
+#exp1 {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#exp2 {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+#exp3 {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 25px;
+}
+#exp4 {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+.icon-row {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Align vertically */
+  width: 35%; /* Set width to 30% of the page */
+  max-width: 300px; /* Prevent it from becoming too wide */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+}
+.icon-row > div {
+  margin: 0 5px; /* Adjust spacing between icons */
+  flex: 1; /* Distribute space equally */
+}
+.tr-city {
+  border: 0px;
+}
+.td-day {
+  border: 1px;
+}
+#td-Latitude {
+	border: 0px;
+}
+.div-times {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; /* This will center the table horizontally */
+  margin-top: 8px; /* Reduce vertical space */
+  margin-bottom: 8px;
+}
+#fajrCell {
+  background-color: #b4eb93; 
+  color: #1D11C1;
+  font-weight: bold;
+}
+#sunsetCell {
+  background-color: #D5DEE3; 
+  color: #070A0C; 
+  font-weight: bold;
+}
+.centered-container {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center; /* Centers tables horizontally */
+    width: 100%;
+}

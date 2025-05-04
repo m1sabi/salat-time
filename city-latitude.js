@@ -1,0 +1,32 @@
+var cityLatitude = {
+    "stuttgart": { "lat": 48.78, "alt": 245 },
+    "dortmund": { "lat": 51.51, "alt": 86 },
+    "bremen": { "lat": 53.08, "alt": 12 },
+    "muenchen": { "lat": 48.14, "alt": 519 },
+    "sibbhult": { "lat": 56.20, "alt": 120 },   // Added Sibbhult
+    "kristianstad": { "lat": 56.03, "alt": 3 }, // Added Kristianstad
+    "friedrichshafen": { "lat": 47.65, "alt": 399 },
+    "duesseldorf": { "lat": 51.22, "alt": 38 },
+    "essen": { "lat": 51.45, "alt": 116 },
+    "leipzig": { "lat": 51.34, "alt": 118 },
+    "freiburg": { "lat": 47.99, "alt": 278 },
+    "berlin": { "lat": 52.52, "alt": 34 },
+    "nuremberg": { "lat": 49.45, "alt": 309 },
+    "karlsruhe": { "lat": 49.00, "alt": 115 },
+    "mannheim": { "lat": 49.49, "alt": 97 },
+    "frankfurt": { "lat": 50.11, "alt": 112 },
+    "kiel": { "lat": 54.32, "alt": 5 },
+    "hamburg": { "lat": 53.55, "alt": 6 },
+    "koblenz": { "lat": 50.35, "alt": 64 },
+    "ravensburg": { "lat": 47.78, "alt": 450 },
+    "regensburg": { "lat": 49.02, "alt": 337 },
+    "augsburg": { "lat": 48.37, "alt": 494 },
+    "erfurt": { "lat": 50.98, "alt": 194 },
+    "lindau": { "lat": 47.55, "alt": 401 },
+    "konstanz": { "lat": 47.66, "alt": 405 },
+    "tuebingen": { "lat": 48.52, "alt": 341 },
+    "rostock": { "lat": 54.09, "alt": 14 },
+    "flensburg": { "lat": 54.78, "alt": 19 },
+	"ulm": { "lat": 48.40, "alt": 478 },
+	"neu_ulm": { "lat": 48.39, "alt": 474 }
+};

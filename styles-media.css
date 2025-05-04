@@ -1,0 +1,151 @@
+@media (max-width: 600px) {
+	.common-table, .div-latitude table {
+        width: 80%; /* Make tables take more space on small screens */
+    }
+}
+    body {
+        width: 100%;
+        margin: 10px;
+    }
+    .outer-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+    }
+    .inner-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    select, button {
+        font-size: 0.9rem; /* slightly smaller text on small screens */
+    }
+    #city-list-container {
+        width: 100%; /* Full width on mobile */
+        color: blue;
+        font-size: 0.5rem;
+    }/* 77*/
+#city-list-container2 {
+    width: 80%;  /* Full width on mobile */
+    color: blue;
+    font-size: 0.8rem;
+  }
+    body {
+        flex-direction: column; /* Stack elements on mobile */
+        align-items: center;
+    }
+    .text-column {
+        width: 0%;
+    }
+    .column {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .list-column {
+        width: 100%;
+        order: unset; /* Reset ordering for smaller screens */
+        padding: 10px;
+        text-align: center;
+    }
+#expl {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+#exp2 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+#exp3 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 25;
+  }
+#exp4 {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+.1st-table {
+    width: 70%; /* use full width on mobile */
+}
+  .second-table {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+.3rd-table {
+    border-collapse: collapse;
+    margin: 5px auto; /* center horizontally */
+    width: 60%;
+  }
+#exp3 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+  .tr-city {
+  border: 0px;
+}
+.td-times {
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.selectors {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align vertically */
+  width: 100%; /* Take full width */
+}
+.div-latitude {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align vertically */
+  width: 100%; /* Take full width */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.div-times {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align vertically */
+  width: 100%; /* Take full width */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+.icon-row > div {
+  margin: 0 10px; /* Add spacing between items */
+  flex: 1; /* Make sure they distribute space evenly */
+}
+/* Table content alignment */
+th, td {
+  border: 1px solid #ccc;
+  padding: 3px 6px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+th {
+  background-color: #f2f2f2;
+}
+ .centered {
+        margin-bottom: 5px;
+    }
+.selectors {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+	
+	
+	
+	
+	
+}
