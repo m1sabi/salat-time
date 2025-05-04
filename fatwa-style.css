@@ -1,0 +1,44 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #111;
+            padding: 1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            
+      }
+h1    {
+			text-align: center;
+			font-size: 1.6rem;
+      }
+h2    {
+			text-align: right;
+			font-size: 1.3rem;
+      }
+		
+		
+        
+#halawa {
+	width: 100%;
+	text-align: right;
+}
+#halawa-img {
+	width: auto; /* Resize the image width */
+    height: 400px; /* Maintain aspect ratio */
+}
+@media (max-width: 600px) {
+#halawa-img {
+	width: auto; /* Resize the image width */
+    height: 200px; /* Maintain aspect ratio */
+}
+h1    {
+			text-align: center;
+			font-size: 1.2rem;
+      }
+h2    {
+			text-align: right;
+			font-size: 0.9rem;
+      }
+
+}
