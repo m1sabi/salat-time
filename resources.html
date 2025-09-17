@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مراجع ومواد</title>
+
+  <!-- keep the same order: site-wide first, page-specific in the middle, media at the end -->
+  <link rel="stylesheet" href="styles-big.css">
+  <link rel="stylesheet" href="resources.css">
+  <link rel="stylesheet" href="styles-media.css">
+  <link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+
+<body class="settings-page">  <!-- ← add this -->
+<div class="outer-container">
+  
+    <div class="centered">
+	  <site-header primary-label="مراجع ومواد" primary-href="resources.html"></site-header>
+      
+
+      <div class="card">
+        <h2>مراجع ومواد</h2>
+
+        <div id="city-list-container2" class="links singleline">
+          <a href="about-makka.html">حول توقيت مكة المكرمة</a>
+        </div>
+
+        <!-- #1 -->
+        <div class="fatwa5d" style="margin-top:10px;">
+          <a href="fatwa-1hour5min.html">فتوى مجلس الإفتاء الأوروبي في قاعدة ساعة و5 دقائق</a>
+        </div>
+
+        <div class="links" style="gap:6px;margin-top:10px;margin-bottom:10px;">
+          <a href="sh-zarka.html">رأي الشيخ مصطفى الزرقا</a>
+          <br>
+          <a href="high-latitudes.html">مشكلة خطوط العرض العليا</a>
+        </div>
+      </div>
+
+
+      <footer>© <span id="y"></span> جميع الحقوق محفوظة</footer>
+    </div>
+  
+</div>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

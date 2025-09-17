@@ -1,0 +1,22 @@
+/* header.css */
+.page-header{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+.links-group{
+  display:flex;
+  flex-direction:row;
+  gap: 1cm;
+}
+.back{
+  color:#0a58ca;
+  text-decoration:none;
+  border:1px solid #cfe2ff;
+  background:#e7f1ff;
+  padding:.35rem .6rem;
+  border-radius:8px;
+  font-weight:600;
+}
+.back:hover{ background:#dbeafe; }

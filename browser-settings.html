@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Settings Instructions</title>
+
+  <!-- Shared header -->
+  <link rel="stylesheet" href="header.css">
+  <script defer src="header.js"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #333; }
+    .instructions { margin-top: 20px; }
+    .instructions h2 { color: #007BFF; }
+    .instructions p { margin: 10px 0; }
+
+    .two-col {
+      display: flex;
+      gap: 20px;
+      direction: ltr;          /* ensure columns flow left->right regardless of page RTL */
+      align-items: flex-start;
+    }
+    .two-col > .col { flex: 1 1 0; }
+    .col.en { direction: ltr; text-align: left; }
+    .col.ar { direction: rtl; text-align: right; }
+	footer{
+	  width: 100%;
+	  text-align: center;   /* center the text in RTL too */
+	  margin: 8px auto 16px;
+	  clear: both;          /* in case something above is floated */
+	}
+    @media (max-width: 700px) { .two-col { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <!-- Unified header -->
+  <site-header></site-header>
+
+  <div class="two-col">
+    <!-- English (left) -->
+    <div class="col en">
+      <h2>Browser Settings Instructions</h2>
+      <p>To allow sound from this page, please enable or allow the following settings in your mobile browser:</p>
+      <ul>
+        <li>Autoplay: Allow audio and video</li>
+        <li>Notifications: Ask for permission</li>
+        <li>Persistent storage: Ask for permission</li>
+      </ul>
+    </div>
+
+    <!-- Arabic (right) -->
+    <div class="col ar">
+      <h2>ضبط إعدادات المتصفح</h2>
+      <p>لسماح الصوت من هذه الصفحة، يرجى تمكين أو السماح بالإعدادات التالية في متصفح الهاتف المحمول:</p>
+      <ul>
+        <li>التشغيل التلقائي: اسمح بالصوت والفيديو</li>
+        <li>التنبيهات: اطلب السماح</li>
+        <li>التخزين الدائم: اطلب السماح</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 style="color: red;">ملاحظة:</h2>
+
+    <p>يعمل الأذان حالياً بينما تكون الصفحة مفتوحة .. على حسب توقيت المدينة الذي تم اختياره .. وسوف يتم العمل لاحقاً على تمكين التنبيهات حتى لو كانت الصفحة في الخلفية ..</p>
+
+    <p>ولكن بشرط .. أن يتم تحميل متصفح Mozill Fire Fox</p>
+
+    <p>لأن هذا المتصفح يسمح بالإشعارات .. بينما باقي المتصفحات فيها قيود أكثر ولو سمحت بالإشعارات فقد لا تعمل .. فإذا تم فتح الصفحة على متصفح موزيلا فإنه مباشرة يعطي رسالة: هل تريد السماح بالإشعارات؟ .. نختار موافق .. فعندما يحين وقت المغرب أو الفجر ينطلق الأذان ويعطي رسالة على الشاشة بأن الوقت قد دخل ..</p>
+
+    <p>وفقط مرة واحدة تحدد المدينة التي أنت فيها .. وعند فتح المتصفح مرة أخرى فهو يأخذ مدينتك التي حددتها واليوم الحالي تلقائياً ..</p>
+
+    <p>طبعاً تطبيق موزيللا هو من أكثر المتصفحات أماناً على النت ..</p>
+
+    <p>وفي المستقبل-ربما القريب- سأضيف مدناً من بلاد مختلفة .. وأيضاً شمال الخط 45 .. وشمال الخط 49 ..</p>
+	<br>
+<footer>© <span id="y"></span> جميع الحقوق محفوظة</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
