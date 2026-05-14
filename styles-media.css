@@ -1,0 +1,340 @@
+/* =======================================
+   Small screens
+   ======================================= */
+/* styles-media.css — shared mobile adjustments (safe for index & settings) */
+/* =======================================*/
+@media (max-width: 600px) {
+
+  .common-table,
+  .div-latitude table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1px 2px;     /* was 3px 6px */
+    line-height: 0.9;     /* tighter lines */
+    font-size: .7rem;     /* a bit smaller text */
+  }
+  /*.common-table th:nth-child(3),
+  .common-table td:nth-child(3){
+    min-width:150px;
+  }*/
+  /* (Optional) even tighter just for the main times rows */
+  .tr-times th,
+  .tr-times td {
+    padding: 2px 3px;
+    font-weight: 700;
+    
+  }
+
+  .outer-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .text-column,
+  .list-column,
+  .column {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  select, button { 
+    font-size: 0.9rem; 
+  }
+
+  .audio-controls select,
+  .audio-controls button {
+    height: 22px;
+  }
+
+  .header-container {
+    width: 95%;
+    margin: 10px auto;
+    background: #e0e0e0;
+    text-align: center;
+    padding: 2px;
+    border-radius: 2px;
+  }
+  .header-text { font-size: .8rem; line-height: 1.4; padding:6px 0px;}
+
+  #city-list-container2 { width: 85%; font-size: .8rem; color: blue; }
+
+  #expl { font-weight: 700; font-size: 1rem; }
+  #exp2 { font-weight: 700; font-size: .8rem; margin-top: 10px; }
+  #exp3 { font-weight: 700; font-size: .8rem; margin-top: 0; }
+  #exp4 { font-weight: 700; font-size: .6rem; margin-top: 0; }
+
+  .second-table { width: 90%; }
+  .td-times { border: 1px solid #ccc; padding: 5px; text-align: center; font-size: .8rem; }
+
+  .selectors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    direction: rtl;
+    text-align: right;
+  }
+
+  .selectors select {
+    flex: 1 1 140px;
+    min-width: 120px;
+    max-width: 220px;
+    width: auto;
+    box-sizing: border-box;
+  }
+  
+  .selectors.method-day {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .selectors.method-day .select-block {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .selectors.method-day .select-block label {
+    width: 100%;
+    white-space: normal;
+    text-align: right;
+    padding-inline-end: 0;
+    line-height: 1.2;
+  }
+
+  .selectors.method-day .select-block select {
+    flex: 1 1 auto;
+    min-width: 120px;
+    width: 100%;
+  }
+
+  .div-latitude,
+  .div-times {
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; margin-top: 2px; margin-bottom: 5px;
+  }
+
+  .icon-row {
+    display: flex; justify-content: center; align-items: center;
+    width: 80%; text-align: center;
+  }
+  .icon-row > div { margin: 0 10px; flex: 1; }
+
+  th, td { border: 1px solid #ccc; padding: 3px 6px; text-align: center; font-size: .9rem; }
+  th { background-color: #f2f2f2; }
+
+  .centered { margin-bottom: 3px; }
+
+  /* Valid/invalid/warning on mobile */
+  .invalid-method { font-weight: 700; color: red; }
+  .valid-method   { font-weight: 700; color: green; }
+  .warning-text   { font-size: .8em; font-weight: 700; color: red; margin-top: 4px; }
+
+  /* Column sizing tweaks on phones */
+  .labels-row{ gap:160px; }
+  
+  #countrySelect {
+	width: 20% !important;
+    max-width: 25% !important;
+    /*min-width: 120px;*/
+    box-sizing: border-box;
+  }
+  #citySelect {
+	width: 70% !important;
+    max-width: 80% !important;
+    /*min-width: 120px;*/
+    box-sizing: border-box;  
+  }
+  
+  #calcMethodSelect {
+    width: 50% !important;
+    max-width: 50% !important;
+    /*min-width: 120px;*/
+    box-sizing: border-box;
+  }
+  
+  #daySelect {
+   width: 25% !important;
+   max-width: 30% !important;
+   /*min-width: 120px;*/
+   box-sizing: border-box;
+  }
+
+  .header-container,
+  .text-column,
+ .centered-container {
+    max-width: 560px;
+    width: 100%;
+    margin-inline: auto;
+ }
+
+
+  
+  #soundselect1 {
+      min-width: auto;
+      width: auto;
+	  white-space: normal;
+	  font-size: 0.9rem;
+  }
+
+
+#soundSelect {
+  height: 28px !important;
+  line-height: 28px !important;
+  padding: 0 6px !important;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+  #calcMethodWrapper { width: 100%; box-sizing: border-box; }
+  
+  .audio-controls {
+    display: flex !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 135px;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    direction: ltr;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .audio-controls .select-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .audio-controls .audio-stop {
+    align-items: flex-end;
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .audio-controls .audio-sound {
+    align-items: stretch;
+    min-width: 0;
+    flex: 1 1 auto;
+    order: -1;
+    box-sizing: border-box;
+  }
+
+  .audio-controls .select-block label {
+    text-align: right;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .audio-controls .audio-stop button,
+  .audio-controls .audio-sound button {
+    width: auto;
+    min-width: 72px;
+    height: 28px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .audio-controls .sound-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .audio-controls .sound-row select {
+    flex: 0 0 140px;
+    min-width: 0;
+    max-width: 140px;
+    height: 28px;
+    padding: 0 6px;
+    box-sizing: border-box;
+  }
+
+  .audio-controls .sound-row button {
+    flex: 0 0 auto;
+    width: auto;
+    height: 22px;
+    padding: 0 8px;
+  }
+
+  .audio-controls .select-block,
+  .audio-controls .sound-row {
+    max-width: 100%;
+	height: auto !important;
+  }
+
+  .text-column,
+  .outer-container,
+  .centered-container,
+  .selectors,
+  .audio-controls,
+  .audio-controls .select-block,
+  .audio-controls .sound-row {
+    box-sizing: border-box;
+  }
+
+  .top-right {
+	display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    margin-top: 30px;
+	margin-bottom: 20px;
+    gap: 10px;
+  }
+
+ #previewBtn {
+	padding: 4px 6px;
+    line-height: 1.2;
+    font-size: 0.8rem;
+    font-weight: 400;
+	height: 28px;
+ }
+ #stopAzan,
+ .nav-buttons button {
+    padding: 4px 6px;
+    line-height: 1.2;
+    font-size: 0.8rem;
+    font-weight: 400;
+ }
+    #stopAzan {
+      width: auto;
+      min-width: 80px;
+    }
+    /* Header nav buttons (settings/home) */
+  .back {
+    padding: .25rem .5rem;   /* smaller */
+    font-size: .85rem;
+  }
+  /* Override inline style of tiny speaker buttons (needs !important) */
+  .sound-toggle {
+    font-size: .8rem !important;
+    margin-right: 4px !important;
+  }
+  .settings-page footer {
+    width: max-content;   /* shrink to content */
+    margin: 0 auto;       /* center the block */
+    text-align: center;   /* optional */
+    font-size:0.6rem;
+  }
+ }
